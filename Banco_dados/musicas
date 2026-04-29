@@ -1,0 +1,20 @@
+use db_2td;
+select database();
+
+CREATE TABLE IF NOT EXISTS musicas (
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ titulo VARCHAR(255) NOT NULL,
+ autor VARCHAR(255),
+ duracao VARCHAR(5),
+ categoria VARCHAR(50),
+ imagem VARCHAR(255)
+); 
+
+SELECT * FROM musicas;
+
+INSERT INTO musicas(titulo, autor, duracao, categoria, imagem) VALUES
+('Chuva de arroz', 'Luan Santana', '3:07','Sertanejo', 'https://i.scdn.co/image/ab67616d0000b27304c370b2158b637f77306590'),
+('Impossíble', ' James Arthur', '3:32','R&B', 'https://upload.wikimedia.org/wikipedia/pt/d/df/Capa_de_James_Arthur.jpg'),
+('Bones', 'Imagine Dragons', '2:46','Rock', 'https://i.scdn.co/image/ab67616d0000b273fc915b69600dce2991a61f13'),
+('Thriller', 'Michael Jackson', '3:22','Rock', 'https://i.scdn.co/image/ab67616d00001e024121faee8df82c526cbab2be'),
+('UP!', 'Forrest Frank', '2:17','Christian', 'https://i.scdn.co/image/ab67616d0000b27308514486451188b525106b88');
