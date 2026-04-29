@@ -14,10 +14,10 @@
                     <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Melon_logo.png" alt="Logo da FullTech" class="logo"></a>
                 </div>
                 <div class="button">
-                    <li class="button"><a href="#">Cadastro</a></li>
+                    <li class="button"><a href="#">Editar</a></li>
                 </div>
                 <div class="button">
-                    <li class="button"><a href="#">Cadastro</a></li>
+                    <li class="button"><a href="#">Apagar</a></li>
                 </div>
                 <div class="button">
                     <li class="button"><a href="#">Cadastro</a></li>

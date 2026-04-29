@@ -23,7 +23,15 @@
         background-color: #000000;
         padding: 15px 5%;
         list-style: none;
-        border-bottom: 2px solid #14c204;
+        border-bottom: 1px solid #14c204;
+    }
+
+    .navbar li {
+        margin-left: 25px;
+    }
+
+    .navbar li:first-of-type {
+        margin-left: auto;
     }
 
     .logo img {
@@ -71,22 +79,23 @@
 
     .container {
         display: flex;
-        color: #ffffff;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
+        min-height: 80vh;
+        color: #ffffff;
         height: 80vh;
     }
 
     .playlist {
         background-color: #1a1a1a;
-        margin-left: -1300px;
-        margin-top: -300px;
         padding: 20px;
         border-radius: 10px;
-        width: 300px;
+        width: 80%;
+        max-width: 800px;
+        margin: 20px auto;
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        position: absolute;
     }
 
     .playlist th {
@@ -94,4 +103,9 @@
         padding-left: 20px;
         padding-right: 20px;
         color: #14c204;
+    }
+
+    .playlist td {
+        padding: 10px;
+        border-bottom: 1px solid #333333;
     }
