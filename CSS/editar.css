@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    padding-bottom: 50px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000000;
+    border-bottom: 1px solid #14c204;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.02);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #14c204;
+    color: #000;
+}
+
+.form-container {
+    max-width: 650px;
+    margin: 50px auto;
+    background-color: #181818;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.titulo-cadastro {
+    text-align: center;
+    color: #14c204;
+    margin-bottom: 35px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.mensagem-erro {
+    color: #ff4c4c;
+    background-color: rgba(255, 76, 76, 0.1);
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid #ff4c4c;
+    font-weight: 500;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+
+label {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #b3b3b3;
+    margin-left: 5px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"],
+input[type="hidden"] {
+    background-color: #282828;
+    border: 1px solid transparent;
+    color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus {
+    border-color: #14c204;
+    background-color: #333333;
+    box-shadow: 0 0 8px rgba(20, 194, 4, 0.2);
+}
+
+input::placeholder {
+    color: #555555;
+}
+
+.btn-submit {
+    background-color: #14c204;
+    color: #000000;
+    border: none;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1ed760;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(20, 194, 4, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}

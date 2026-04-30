@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    padding-bottom: 50px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000000;
+    border-bottom: 1px solid #14c204;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.02);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #14c204;
+    color: #000;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #181818;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-cadastro {
+    text-align: center;
+    color: #14c204;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.mensagem-erro {
+    color: #ff4c4c;
+    background-color: rgba(255, 76, 76, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ff4c4c;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #aaaaaa;
+}
+
+input[type="text"],
+input[type="url"] {
+    background-color: #282828;
+    border: 1px solid #444;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus {
+    border-color: #14c204;
+}
+
+input::placeholder {
+    color: #666666;
+}
+
+.btn-submit {
+    background-color: #14c204;
+    color: #000000;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background-color: #11a603;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}

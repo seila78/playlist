@@ -1,4 +1,4 @@
-use db_2td;
+use mysql;
 select database();
 
 CREATE TABLE IF NOT EXISTS musicas (
